@@ -1,0 +1,561 @@
+/*1 экран. падение букв*/
+
+.letter-1 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate1 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate1 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 35.5vw;
+    left: -7.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-2 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate2 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate2 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 22vw;
+    left: -8.8vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-3 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate3 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate3 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 6.5vw;
+    left: -5.2vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-4 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate4 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate4 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 37.5vw;
+    left: -5.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-5 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate5 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate5 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 17.3vw;
+    left: -5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-6 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate6 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate6 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 44.5vw;
+    left: -6vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-7 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate7 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate7 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 27.5vw;
+    left: -0.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-8 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate8 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate8 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 10.5vw;
+    left: 2vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-9 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate9 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate9 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 36.5vw;
+    left: 2.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-10 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate10 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate10 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 18.5vw;
+    left: 4.2vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-11 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate11 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate11 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 44.5vw;
+    left: 4vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-12 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate12 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate12 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 28.7vw;
+    left: 7.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-13 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate13 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate13 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 13.5vw;
+    left: 9.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-14 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate14 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate14 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 36.5vw;
+    left: 8.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-15 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate15 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate15 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 20.3vw;
+    left: 10.9vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+
+.letter-16 {
+  transform: translateX(-50%) rotate(360deg);
+  animation: fallAndRotate16 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes fallAndRotate16 {
+  0% {
+    top: 0vw;
+    left: 0vw;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 9.2vw;
+    left: 14.5vw;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+/*1 экран. Звезды*/
+
+
+#star1{
+    animation: rot1 5s linear infinite;
+  }
+  
+  @keyframes rot1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#star2{
+    animation: rot2 5s linear infinite;
+  }
+  
+  @keyframes rot2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+#star3{
+    animation: rot3 5s linear infinite;
+  }
+  
+  @keyframes rot3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#star4{
+    animation: rot4 5s linear infinite;
+  }
+  
+  @keyframes rot4 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+
+/*2 экран. Цветы и текст*/
+
+
+  #screenTwoText1 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText1.visible1 {
+    opacity: 1;
+  }
+  
+  #screenTwoText1.hidden1 {
+    opacity: 0;
+  }
+
+
+  #screenTwoText2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText2.visible2 {
+    opacity: 1;
+  }
+  
+  #screenTwoText2.hidden2 {
+    opacity: 0;
+  }
+  
+
+  #screenTwoText3 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText3.visible3 {
+    opacity: 1;
+  }
+  
+  #screenTwoText3.hidden3 {
+    opacity: 0;
+  }
+
+  
+  #screenTwoText4 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText4.visible4 {
+    opacity: 1;
+  }
+  
+  #screenTwoText4.hidden4 {
+    opacity: 0;
+  }
+
+
+  #screenTwoText5 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText5.visible5 {
+    opacity: 1;
+  }
+  
+  #screenTwoText5.hidden5 {
+    opacity: 0;
+  }
+  
+
+  #screenTwoText6 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #screenTwoText6.visible6 {
+    opacity: 1;
+  }
+  
+  #screenTwoText6.hidden6 {
+    opacity: 0;
+  }
+
+
+/*2 экран. Цветы*/
+
+
+.flower-1{
+    transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-1{
+  transform: translateY(-100px);
+}
+
+.flowers:hover .flower-1{
+  transform: translateY(-220px);
+}
+
+
+.flower-2{
+  transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-2{
+transform: translateY(-100px);
+}
+
+.flowers:hover .flower-2{
+transform: translateY(-150px);
+}
+
+
+.flower-3{
+  transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-3{
+transform: translateY(-100px);
+}
+
+.flowers:hover .flower-3{
+transform: translateY(-220px);
+}
+
+
+.flower-4{
+transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-4{
+transform: translateY(-100px);
+}
+
+.flowers:hover .flower-4{
+transform: translateY(-120px);
+}
+
+
+.flower-5{
+  transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-5{
+transform: translateY(-100px);
+}
+
+.flowers:hover .flower-5{
+transform: translateY(-160px);
+}
+
+
+.flower-6{
+transition: transform 0.3s ease;
+}
+
+.flowers:hover .flower-6{
+transform: translateY(-100px);
+}
+
+.flowers:hover .flower-6{
+transform: translateY(-170px);
+}
+
+

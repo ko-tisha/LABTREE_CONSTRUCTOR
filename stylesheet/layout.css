@@ -1,0 +1,1061 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.all{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/*шрифты*/
+
+@font-face{
+    font-family: "ZeroCool";
+    src: url("../font/ZeroCool.ttf"), format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.letter-1, .letter-2, .letter-3, .letter-4, .letter-5, .letter-6, .letter-7, .letter-8, .letter-9, .letter-10, .letter-11, .letter-12, .letter-13, .letter-14, .letter-15, .letter-16 {
+    font-family: "ZeroCool";
+    font-size: 8.5vw;
+}
+
+.plate-text-1{
+    font-family: "ZeroCool";
+    font-size: 3.7vw;
+}
+
+.screen-one-text-blink-1, .screen-one-text-blink-2, .screen-two-text-1, .screen-two-text-2, .screen-two-text-3, .screen-two-text-4, .screen-two-text-5, .screen-two-text-6{
+    font-family: "ZeroCool";
+    font-size: 3vw;
+}
+
+.footer-name, .footer-group, .footer-course, .footer-module, .table-head-1, .table-head-2, .table-head-3, .table-head-4, .ready, .again{
+    font-family: "ZeroCool";
+    font-size: 2.6vw;
+}
+
+.footer-hse{
+    font-family: "ZeroCool";
+    font-size: 1.7vw;
+}
+
+.plate-text-2{
+    font-family: "ZeroCool";
+    font-size: 1.18vw;
+}
+
+/*1 экран*/
+
+div.screen-one * {
+    cursor: url("../img/arrow_one.png"), auto;
+}
+
+.screen-one{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 56.24vw;
+    background-color: #FFC561;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.blink{
+    margin-top: -4vw;
+}
+
+.screen-one-text-blink-1{
+    margin-left: 77vw;
+    margin-top: -27vw;
+    transform: rotate(45deg);
+    color: #E75F51;
+}
+
+.screen-one-text-blink-2{
+    margin-left: -56vw;
+    margin-top: -57vw;
+    color: #E75F51;
+    transform: rotate(-45deg);
+}
+
+/*1 экран. плашка*/
+
+.plate{
+    z-index: 4;
+    width: 44vw;
+    height: 23vw;
+    background-color: #E75F51;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.button-plate-x{
+    background: none;
+    background-color: none;
+    border: none;
+    padding: 0;
+}
+
+.button-plate-y{
+    background: none;
+    background-color: none;
+    border: none;
+    padding: 0;
+}
+
+.plate-x{
+    width: 6vw;
+    margin-top: -6vw;
+}
+
+.plate-y{
+    width: 6.2vw;
+    margin-top: -6vw;
+    margin-left: 5vw;
+}
+
+.plate-text-1{
+    color: #FFFFFF;
+    margin-top: 0.5vw;
+    text-align: center
+}
+
+.plate-text-2{
+    color: #FFC561;
+    margin-top: -7vw;
+    text-align: center
+}
+
+/*1 экран. элементы*/
+
+.elements{
+    position: relative;
+}
+
+.screen-one-elements{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: -52vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.star-1{
+    width: 10vw;
+    margin-top: -33vw;
+    margin-left: 1.5vw;
+    position: absolute;
+}
+
+.star-2{
+    width: 5vw;
+    margin-top: 5vw;
+    margin-left: 1vw;
+    position: absolute;
+}
+
+.star-3{
+    width: 5vw;
+    margin-top: -17vw;
+    margin-left: 80vw;
+    position: absolute;
+}
+
+.star-4{
+    width: 10vw;
+    margin-top: -1vw;
+    margin-left: 84vw;
+    position: absolute;
+}
+
+/*1 экран. основное*/
+
+.tree-text{
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: -3vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.tree{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.trunk{
+    z-index: 1;
+    width: 18vw;
+    margin-top: 32vw;
+    margin-left: 0.5vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.crown{
+    z-index: 2;
+    width: 65vw;
+    margin-top: -8vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.screen-one-text{
+    z-index: 3;
+    margin-left: 5vw;
+    position: relative;
+}
+
+.letter-1{
+    color: #E75F51;
+    margin-top: -46vw;
+    margin-left: -6vw;
+    transform: rotate(21deg);
+    position: absolute;
+}
+
+.letter-2{
+    color: #26B1B8;
+    margin-top: -32.5vw;
+    margin-left: 1vw;
+    transform: rotate(-8deg);
+    position: absolute;
+}
+
+.letter-3{
+    color: #5A97FF;
+    margin-top: -17vw;
+    margin-left: 3vw;
+    transform: rotate(10deg);
+    position: absolute;
+}
+
+.letter-4{
+    color: #FF76A8;
+    margin-top: -48vw;
+    margin-left: 8vw;
+    transform: rotate(10deg);
+    position: absolute;
+}
+
+.letter-5{
+    color: #FF7C51;
+    margin-top: -28vw;
+    margin-left: 12vw;
+    transform: rotate(-17deg);
+    position: absolute;
+}
+
+.letter-6{
+    color: #5A97FF;
+    margin-top: -55vw;
+    margin-left: 18vw;
+    transform: rotate(-17deg);
+    position: absolute;
+}
+
+.letter-7{
+    color: #E75F51;
+    margin-top: -38vw;
+    margin-left: 21vw;
+    transform: rotate(-17deg);
+    position: absolute;
+}
+
+.letter-8{
+    color: #FF76A8;
+    margin-top: -21vw;
+    margin-left: 24vw;
+    transform: rotate(11deg);
+    position: absolute;
+}
+
+.letter-9{
+    color: #FF7C51;
+    margin-top: -47vw;
+    margin-left: 29vw;
+    transform: rotate(11deg);
+    position: absolute;
+}
+
+.letter-10{
+    color: #5A97FF;
+    margin-top: -29vw;
+    margin-left: 32.5vw;
+    transform: rotate(25deg);
+    position: absolute;
+}
+
+.letter-11{
+    color: #E75F51;
+    margin-top: -55vw;
+    margin-left: 40vw;
+    transform: rotate(11deg);
+    position: absolute;
+}
+
+.letter-12{
+    color: #26B1B8;
+    margin-top: -39vw;
+    margin-left: 41.5vw;
+    transform: rotate(11deg);
+    position: absolute;
+}
+
+.letter-13{
+    color: #FF76A8;
+    margin-top: -24vw;
+    margin-left: 44vw;
+    transform: rotate(-25deg);
+    position: absolute;
+}
+
+.letter-14{
+    color: #E75F51;
+    margin-top: -47vw;
+    margin-left: 49.5vw;
+    transform: rotate(-25deg);
+    position: absolute;
+}
+
+.letter-15{
+    color: #26B1B8;
+    margin-top: -31vw;
+    margin-left: 52vw;
+    transform: rotate(11deg);
+    position: absolute;
+}
+
+.letter-16{
+    color: #FF7C51;
+    margin-top: -20vw;
+    margin-left: 54vw;
+    transform: rotate(-11deg);
+    position: absolute;
+}
+
+/*2 экран*/
+
+div.screen-two * {
+    cursor: url("../img/arrow_two.png"), auto;
+}
+
+.screen-two{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 56.24vw;
+    background-color: #5E598F;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/*2 экран. текст*/
+
+.screen-two-text{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content;
+    align-items: center;
+    gap: 3.2vw;
+    margin-left: -1.5vw;
+    margin-top: 1vw;
+    color: #FFC561;
+}
+
+.screen-two-text-1{
+    margin-top: 1vw;
+    transform: rotate(-15deg);
+}
+
+.screen-two-text-2{
+    margin-top: 10vw;
+    margin-left: -5vw;
+    transform: rotate(-35deg);
+}
+
+.screen-two-text-3{
+    margin-top: 0vw;
+    margin-left: 2vw;
+    transform: rotate(15deg);
+}
+
+.screen-two-text-4{
+    margin-top: 13vw;
+    transform: rotate(-25deg);
+}
+
+.screen-two-text-5{
+    margin-top: 12vw;
+    transform: rotate(15deg);
+}
+
+.screen-two-text-6{
+    margin-top: 7vw;
+    transform: rotate(-15deg);
+}
+
+/*2 экран. цветы, горшки, стол*/
+
+.flowers{
+    z-index: 1;
+    margin-left: 11.8vw;
+    margin-top: 10vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content;
+    align-items: center;
+}
+
+.flower-1{
+    position: absolute;
+    width: 10.5vw;
+    margin-left: -50.5vw;
+    margin-top: 25vw;
+}
+
+.flower-2{
+    position: absolute;
+    width: 9vw;
+    margin-left: -34.5vw;
+    margin-top: 17vw;
+}
+
+.flower-3{
+    position: absolute;
+    width: 5vw;
+    margin-left: -16.5vw;
+    margin-top: 25vw; 
+}
+
+.flower-4{
+    position: absolute;
+    width: 14.5vw;
+    margin-left: -6.5vw;
+    margin-top: 15vw;
+}
+
+.flower-5{
+    position: absolute;
+    width: 9vw;
+    margin-left: 11.7vw;
+    margin-top: 17vw;
+}
+
+.flower-6{
+    position: absolute;
+    width: 12vw;
+    margin-left: 25.5vw;
+    margin-top: 19vw;
+}
+
+.pots_1{
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content;
+    align-items: center;
+}
+
+.pot-1{
+    z-index: 3;
+    width: 11.5vw;
+    margin-left: -45vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+.pot-2{
+    z-index: 3;
+    width: 11.5vw;
+    margin-left: -29.6vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+.pot-3{
+    z-index: 3;
+    width: 11.5vw;
+    margin-left: -14vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+.pot-4{
+    z-index: 3;
+    width: 11.5vw;
+    margin-left: 1.15vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+.pot-5{
+    z-index: 3;
+    width: 11.5vw;
+    margin-left: 16.4vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+.pot-6{
+    z-index: 3;
+    width: 11.2vw;
+    margin-left: 31.6vw;
+    margin-top: -50vw;
+    position: absolute;
+}
+
+
+.screen-two-table{
+    width: 100vw;
+    margin-top: -37vw;
+    z-index: 4;
+}
+
+.screen-two-back{
+    z-index: 2;
+    width: 100%;
+    height: 30vw;
+    margin-top: 4vw;
+    background-color: #5E598F;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+}
+
+/*3 экран*/
+
+div.screen-three * {
+    cursor: url("../img/arrow_three.png"), auto;
+}
+
+.screen-three{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 56.24vw;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+
+/*3 экран. заголовок таблицы*/
+
+.table-head{
+    width: 100%;
+    height: 5vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    align-items: center;
+}
+
+.table-head-1{
+    width: 55vw;
+    height: 5vw;
+    background-color: #FFC561;
+    color: #E75F51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-head-2{
+    width: 15vw;
+    height: 5vw;
+    background-color: #5A97FF;
+    color: #FF7C51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-head-3{
+    width: 15vw;
+    height: 5vw;
+    background-color: #ACD339;
+    color: #5E598F;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-head-4{
+    width: 15vw;
+    height: 5vw;
+    background-color: #FF76A8;
+    color: #5A97FF;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/*3 экран. таблица экран'*/
+
+.table-screen{
+    width: 5vw;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-screen-trunk1{
+    width: 14vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 8vw;
+}
+
+.table-screen-trunk2{
+    width: 20vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 21.5vw;
+}
+
+.table-screen-trunk3{
+    width: 10vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 17.65vw;
+}
+
+.table-screen-crown1{
+    width: 36vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-crown2{
+    width: 32vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-crown3{
+    width: 25vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-more1{
+    width: 27vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -25vw;
+    margin-left: -10vw;
+}
+
+.table-screen-more2{
+    width: 32vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-more3{
+    width: 32vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+/*3 экран. таблица кнопки*/
+
+.table-screen-buttons{
+    width: 100%;
+    height: 51.24vw;;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+}
+
+.table-screen{
+    width: 55vw;
+    height: 51.24vw;
+}
+
+.table-buttons{
+    width: 45vw;
+    height: 51.24vw;
+}
+
+/*3 экран. кнопки. 1 ряд*/
+
+.table-buttons-row-1{
+    width: 45;
+    height: 15.5vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+}
+
+.table-button-1{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #9A6A5C;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-1-element{
+    width: 13vw;
+}
+
+.table-button-2{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #FFC561;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-2-element{
+    width: 4.5vw;
+}
+
+.table-button-3{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #E75F51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-3-element{
+    width: 11.5vw;
+    margin-left: -0.5vw;
+}
+
+/*3 экран. кнопки. 2 ряд*/
+
+.table-buttons-row-2{
+    width: 45;
+    height: 15.5vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+}
+
+.table-button-4{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #26B1B8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-4-element{
+    width: 13vw;
+}
+
+.table-button-5{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #FF76A8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-5-element{
+    width: 8.5vw;
+}
+
+.table-button-6{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #ACD339;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-6-element{
+    width: 12vw;
+    margin-left: -0.5vw;
+}
+
+/*3 экран. кнопки. 3 ряд*/
+
+.table-buttons-row-3{
+    width: 45;
+    height: 15.5vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+}
+
+.table-button-7{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #FF7C51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-7-element{
+    width: 9.5vw;
+}
+
+.table-button-8{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #5E598F;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-8-element{
+    width: 4.7vw;
+}
+
+.table-button-9{
+    width: 15vw;
+    height: 15.5vw;
+    background-color: #5A97FF;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-button-9-element{
+    width: 13vw;
+    margin-left: -1vw;
+}
+
+/*3 экран. кнопки. 4 ряд*/
+
+.ready-button{
+    width: 45vw;
+    height: 5.24vw;
+    background-color: #FFC561;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.ready{
+    margin-top: -0.5vw;
+    color: #E75F51;
+}
+
+
+/*4 экран*/
+
+div.screen-four * {
+    cursor: url("../img/arrow_three.png"), auto;
+}
+
+.screen-four{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 56.24vw;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.again-button{
+    width: 100%;
+    height: 5vw;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+}
+
+.nothing{
+    width: 70vw;
+    height: 5vw;
+    background-color: #ffffff;
+}
+
+.again{
+    width: 30vw;
+    height: 5vw;
+    background-color: #FFC561;
+    color: #E75F51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.screen-four-tree{
+    width: 100%;
+    height: 51.24vw;
+    background-color: none;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-screen-trunk1_2{
+    width: 13vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 20vw;
+}
+
+.table-screen-trunk2_2{
+    width: 25vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 21.5vw;
+}
+
+.table-screen-trunk3_2{
+    width: 13vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: 17.65vw;
+}
+
+.table-screen-crown1_2{
+    width: 36vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-crown2_2{
+    width: 36vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-crown3_2{
+    width: 28vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-more1_2{
+    width: 29vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -25vw;
+    margin-left: -10vw;
+}
+
+.table-screen-more2_2{
+    width: 36vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+.table-screen-more3_2{
+    width: 36vw;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin-top: -10vw;
+}
+
+/*подвал*/
+
+.footer{
+    cursor: url("../img/arrow_three.png"), auto;
+}
+
+.footer{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 5vw;
+    background-color: #bcbcbc;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    align-items: center;
+}
+
+.footer-name{
+    width: 40vw;
+    height: 5vw;
+    background-color: #5A97FF;
+    color: #FFC561;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-group{
+    width: 15vw;
+    height: 5vw;
+    background-color: #FF76A8;
+    color: #9A6A5C;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-course{
+    width: 15vw;
+    height: 5vw;
+    background-color: #5E598F;
+    color: #FFC561;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-module{
+    width: 15vw;
+    height: 5vw;
+    background-color: #ACD339;
+    color: #26B1B8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-hse{
+    width: 15vw;
+    height: 5vw;
+    background-color: #26B1B8;
+    color: #FF76A8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

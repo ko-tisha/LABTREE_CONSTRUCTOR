@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛАБТРИ</title>
+    <link rel="icon" href="./img/tree.png">
+    <meta name="description" content="Лабтри — это компания которая создает уникальные деревья. Они могут не только украсить любое пространство, но и нести в себе полезные функции: очищать воздух, давать различные плоды (в том числе несъедобные) и не только. Деревья могут быть любых размеров, форм, цветов. ">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+
+    <!-- Вопросы
+    Утром подготовить буквы (размер, цвет)
+
+     1.  2 экран. названия цветов сделать там, чтобы названия пропадали через 5 сек
+     
+     2. 3.2 экран. деревья побольше 
+
+     3. курсор везде стрелочка
+
+     4. упростить все Названия
+
+     -->
+
+
+    <!-- 1 экран -->
+
+
+    <div class="all"> 
+        <div id="screenOne" class="screen-one">
+
+            <div id="elements" class="elements" style="display: none;">
+                <img class="screen-one-elements" src="./img/elements.png" alt="here_picture">
+                <img id="star1" class="star-1" src="./img/star1.png" alt="here_picture">
+                <img id="star2" class="star-2" src="./img/star2.png" alt="here_picture">
+                <img id="star3" class="star-3" src="./img/star3.png" alt="here_picture">
+                <img id="star4" class="star-4" src="./img/star4.png" alt="here_picture">
+            </div>
+    
+            <div class="blink"> 
+                <div id="TextBlink1" class="screen-one-text-blink-1"> нажми 3 раза </div> 
+                <div id="TextBlink2" class="screen-one-text-blink-2"> потряси дерево </div> 
+            </div>
+    
+            <div class="tree-text">
+    
+                <div class="tree">
+                    <img id="trunk" class="trunk" src="./img/trunk.png" alt="here_picture">
+                    <img id="crown" class="crown" src="./img/crown.png" alt="here_picture" style="cursor: pointer;">
+                </div>
+    
+                <div class="screen-one-text">
+                    <div id="letter1" class="letter-1"> c </div>
+                    <div id="letter2" class="letter-2"> о </div>
+                    <div id="letter3" class="letter-3"> б </div>
+                    <div id="letter4" class="letter-4"> е </div>
+                    <div id="letter5" class="letter-5"> р </div>
+                    <div id="letter6" class="letter-6"> и </div>
+                    <div id="letter7" class="letter-7"> c </div>
+                    <div id="letter8" class="letter-8"> в </div>
+                    <div id="letter9" class="letter-9"> о </div>
+                    <div id="letter10" class="letter-10"> ё </div>
+                    <div id="letter11" class="letter-11"> д </div>
+                    <div id="letter12" class="letter-12"> е </div>
+                    <div id="letter13" class="letter-13"> р </div>
+                    <div id="letter14" class="letter-14"> е </div>
+                    <div id="letter15" class="letter-15"> в </div>
+                    <div id="letter16" class="letter-16"> о </div>
+                </div>
+            </div>
+    
+            <div id="Plate" class="plate">
+                <div class="plate-text-1">открыть <br> на полный экран?</div>
+                <div class="plate-text-2">для выхода из полноэкранного режима нажмите ESC</div>
+                
+                <div class="button-plates">
+                    <span class="button-plate-1">
+                        <button id="buttonPlateX" class="button-plate-x" onclick="del()">
+                            <img class="plate-x" src="./img/plate-x.png" alt="here_picture">
+                        </button>
+                    </span>
+        
+                    <span class="button-plate-2">
+                        <button id="buttonPlateY" class="button-plate-y" onclick="del()">
+                            <img class="plate-y" src="./img/plate-y.png" alt="here_picture">
+                        </button>
+                    </span>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- 2 экран -->
+    
+        <div id="screenTwo" class="screen-two">
+        
+            <div class="screen-two-text"> 
+                <div id="screenTwoText1" class="screen-two-text-1 hidden"> санфлаф </div>
+                <div id="screenTwoText2" class="screen-two-text-2"> лонгстик </div>
+                <div id="screenTwoText3" class="screen-two-text-3"> трикл </div>
+                <div id="screenTwoText4" class="screen-two-text-4"> ладжлэф </div>
+                <div id="screenTwoText5" class="screen-two-text-5"> тускак </div>
+                <div id="screenTwoText6" class="screen-two-text-6"> маниф </div>
+            </div>
+    
+            <div class="flowers">
+                <img id="flower1" class="flower-1" src="./img/flow1.png" alt="here_picture" style="cursor: pointer;">
+                <img id="flower2" class="flower-2" src="./img/flow2.png" alt="here_picture" style="cursor: pointer;">
+                <img id="flower3" class="flower-3" src="./img/flow3.png" alt="here_picture" style="cursor: pointer;">
+                <img id="flower4" class="flower-4" src="./img/flow4.png" alt="here_picture" style="cursor: pointer;">
+                <img id="flower5" class="flower-5" src="./img/flow5.png" alt="here_picture" style="cursor: pointer;">
+                <img id="flower6" class="flower-6" src="./img/flow6.png" alt="here_picture" style="cursor: pointer;">
+            </div>
+    
+            <div class="screen-two-back"></div>
+    
+            <div class="pots">
+                <div class="pots_1">
+                    <img id="pot1" class="pot-1" src="./img/pot1.png" alt="Горшок 1">
+                    <img id="pot2" class="pot-2" src="./img/pot2.png" alt="Горшок 2">
+                    <img id="pot3" class="pot-3" src="./img/pot3.png" alt="Горшок 3">
+                    <img id="pot4" class="pot-4" src="./img/pot4.png" alt="Горшок 4">
+                    <img id="pot5" class="pot-5" src="./img/pot5.png" alt="Горшок 5">
+                    <img id="pot6" class="pot-6" src="./img/pot6.png" alt="Горшок 6">
+                </div>
+            </div>
+    
+            <img class="screen-two-table" src="./img/table.png" alt="here_picture">
+    
+        </div>
+    
+        <!-- 3 экран -->
+    
+        <div id="screenThtee" class="screen-three">
+    
+            <div class="table-head">
+                <span class="table-head-1"> твоё дерево </span>
+                <span class="table-head-2"> кроны </span>
+                <span class="table-head-3"> стволы </span>
+                <span class="table-head-4"> ещё </span>
+            </div>
+    
+            <div class="table-screen-buttons">
+                <div class="table-screen">
+                    <img id="tsTrunk1" class="table-screen-trunk1" src="./img/trunk1.png" alt="here_picture" style="display: none;">
+                    <img id="tsTrunk2" class="table-screen-trunk2" src="./img/trunk2.png" alt="here_picture" style="display: none;">
+                    <img id="tsTrunk3" class="table-screen-trunk3" src="./img/trunk3.png" alt="here_picture" style="display: none;">
+
+                    <img id="tsCrown1" class="table-screen-crown1" src="./img/crown1.png" alt="here_picture" style="display: none;">
+                    <img id="tsCrown2" class="table-screen-crown2" src="./img/crown2.png" alt="here_picture" style="display: none;">
+                    <img id="tsCrown3" class="table-screen-crown3" src="./img/crown3.png" alt="here_picture" style="display: none;">
+
+                    <img id="tsMore1" class="table-screen-more1" src="./img/more1.png" alt="here_picture" style="display: none;">
+                    <img id="tsMore2" class="table-screen-more2" src="./img/more2.png" alt="here_picture" style="display: none;">
+                    <img id="tsMore3" class="table-screen-more3" src="./img/more3.png" alt="here_picture" style="display: none;">
+                </div>
+
+                <span class="table-buttons">
+                    <span class="table-buttons-row-1">
+                        <span class="table-button-1"> 
+                            <img id="tableButton1" class="table-button-1-element" src="./img/crown1.png" alt="here_picture"> 
+                        </span>
+                        <span class="table-button-2">
+                            <img id="tableButton2" class="table-button-2-element" src="./img/trunk1.png" alt="here_picture">
+                        </span>
+                        <span class="table-button-3">
+                            <img id="tableButton3" class="table-button-3-element" src="./img/more1.png" alt="here_picture">
+                        </span>
+                    </span>
+                    <span class="table-buttons-row-2">
+                        <span class="table-button-4">
+                            <img id="tableButton4" class="table-button-4-element" src="./img/crown2.png" alt="here_picture">
+                        </span>
+                        <span class="table-button-5">
+                            <img id="tableButton5" class="table-button-5-element" src="./img/trunk2.png" alt="here_picture">
+                        </span>
+                        <span class="table-button-6">
+                            <img id="tableButton6" class="table-button-6-element" src="./img/more2.png" alt="here_picture">
+                        </span>
+                    </span>
+                    <span class="table-buttons-row-3">
+                        <span class="table-button-7">
+                            <img id="tableButton7" class="table-button-7-element" src="./img/crown3.png" alt="here_picture">
+                        </span>
+                        <span class="table-button-8">
+                            <img id="tableButton8" class="table-button-8-element" src="./img/trunk3.png" alt="here_picture">
+                        </span>
+                        <span class="table-button-9">
+                            <img id="tableButton9" class="table-button-9-element" src="./img/more3.png" alt="here_picture">
+                        </span>
+                    </span>
+                    <span class="ready-button"> 
+                        <span id="ready" class="ready"> готово! </span>
+                    </span>
+                </span>
+            </div>
+    
+        </div>
+
+        <!-- 4 экран -->
+
+        <div id="screenFour" class="screen-four" style="display: none;">
+
+            <div class="screen-four-tree">
+                <img id="tsTrunk1_2" class="table-screen-trunk1_2" src="./img/trunk1.png" alt="here_picture" style="display: none;">
+                <img id="tsTrunk2_2" class="table-screen-trunk2_2" src="./img/trunk2.png" alt="here_picture" style="display: none;">
+                <img id="tsTrunk3_2" class="table-screen-trunk3_2" src="./img/trunk3.png" alt="here_picture" style="display: none;">
+
+                <img id="tsCrown1_2" class="table-screen-crown1_2" src="./img/crown1.png" alt="here_picture" style="display: none;">
+                <img id="tsCrown2_2" class="table-screen-crown2_2" src="./img/crown2.png" alt="here_picture" style="display: none;">
+                <img id="tsCrown3_2" class="table-screen-crown3_2" src="./img/crown3.png" alt="here_picture" style="display: none;">
+
+                <img id="tsMore1_2" class="table-screen-more1_2" src="./img/more1.png" alt="here_picture" style="display: none;">
+                <img id="tsMore2_2" class="table-screen-more2_2" src="./img/more2.png" alt="here_picture" style="display: none;">
+                <img id="tsMore3_2" class="table-screen-more3_2" src="./img/more3.png" alt="here_picture" style="display: none;">
+            </div>
+            <span class="again-button">
+                <span class="nothing"></span>
+                <span id="again" class="again"> сделать заново </span>
+            </span>
+        
+        </div>
+    
+    
+        <!-- подвал -->
+    
+        <footer class="footer">
+            <span class="footer-name"> Ковалёва Наталия </span>
+            <span class="footer-group"> БП24ДЗ09 </span>
+            <span class="footer-course"> 1 курс </span>
+            <span class="footer-module"> 3 модуль </span>
+            <span class="footer-hse"> HSE ART AND <br> DESIGN SCHOOL </span>
+        </footer>
+    </div>
+
+</body>
